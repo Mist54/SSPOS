@@ -10,16 +10,20 @@
                  mc:Ignorable="d"
                  Title="SSPOS" Height="450" Width="800">
 
+
+
+
+
     <mah:MetroWindow.Resources>
         <local:ControlConverters x:Key="ControlConverters"/>
     </mah:MetroWindow.Resources>
-
+    
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
         <!-- Sidebar Menu -->
         <mahapps:HamburgerMenu x:Name="SidebarMenu"
                        DisplayMode="CompactOverlay"
@@ -51,12 +55,16 @@
                         </TextBlock>
                     </StackPanel>
                 </DataTemplate>
+                
             </mahapps:HamburgerMenu.ItemTemplate>
 
             <mahapps:HamburgerMenu.ItemsSource>
                 <x:Array Type="{x:Type mahapps:HamburgerMenuIconItem}">
-                    <mahapps:HamburgerMenuIconItem Label="Billing" Tag="Billing" Icon="CashRegister" />
-                    <mahapps:HamburgerMenuIconItem Label="Settings" Tag="Settings" Icon="Cog" />
+                    <mahapps:HamburgerMenuIconItem x:Name="BillingMenu" Label="Billing" Tag="Billing" Icon="CashRegister" />
+                    <mahapps:HamburgerMenuIconItem x:Name="SettingMenu" Label="Settings" Tag="Settings" Icon="Cog" />
+                    <mahapps:HamburgerMenuIconItem x:Name="LogoutMenu" Label="Log out" Tag="LogOut" Icon="Logout"/>
+                    <mahapps:HamburgerMenuIconItem x:Name="OperationMenu" Label="Oparations" Tag="Oparations" Icon="Database"/>
+
                 </x:Array>
             </mahapps:HamburgerMenu.ItemsSource>
         </mahapps:HamburgerMenu>

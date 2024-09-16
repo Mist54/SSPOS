@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="SSPOS.UserControls.LoginControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             Width="400" Height="300"
+             Background="#ECF0F1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Border Background="#3498DB"  Padding="10" Margin="0,0,0,20">
+            <TextBlock Text="Login" FontSize="26" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Content Section -->
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Margin="20">
+                <TextBlock Text="Username" Margin="9,0,0,5" FontWeight="SemiBold"/>
+                <TextBox x:Name="LoginUsername" Width="250" Padding="10" BorderBrush="#BDC3C7" BorderThickness="1" />
+
+                <TextBlock Text="Password" Margin="10,20,0,5" FontWeight="SemiBold"/>
+                <PasswordBox x:Name="LoginPassword" Width="250" Padding="10" BorderBrush="#BDC3C7" BorderThickness="1"/>
+
+                <Button Content="Login" Width="150" Margin="20" HorizontalAlignment="Center" Background="#3498DB" Foreground="White" BorderThickness="0" Height="40"
+                        Style="{DynamicResource MahApps.Styles.Button.MetroSquare.Accent}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
