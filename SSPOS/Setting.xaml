@@ -1,9 +1,0 @@
-﻿<Page x:Class="SSPOS.Settings"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      Title="Settings">
-    <Grid>
-        <!-- Your Settings Page content here -->
-        <TextBlock Text="This is the Settings Page" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-    </Grid>
-</Page>
